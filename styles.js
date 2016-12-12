@@ -27,7 +27,6 @@ export default StyleSheet.create({
     borderWidth:1,
     borderRadius:5,
     borderColor:'#fff',
-    color:'#fff',
   },
   storeName: {
     color: "#faec00",

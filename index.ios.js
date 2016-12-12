@@ -74,7 +74,7 @@ export default class ReactNativeApp1 extends Component {
             <Text style={styles.titleName}>Store Locator</Text>
         </View>
         <View onSubmit={this.onSearchSubmit.bind(this)} >
-          <TextInput onChangeText={this.onNewStoreSearch.bind(this)} value={this.state.newItemValue} placeholder="Search store..."
+          <TextInput onChangeText={this.onNewStoreSearch.bind(this)} value={this.state.newItemValue} placeholderTextColor='#fff' placeholder="Search store..."
             style={styles.inputSearch}
             onSubmitEditing={this.onSearchSubmit.bind(this)} />
         </View>
@@ -95,36 +95,5 @@ export default class ReactNativeApp1 extends Component {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-//
-//
-//
-//       <ScrollView>
-//         <View style={styles.container}>
-//           {this.state.stores.map((store) => {
-//             return (
-//               <View key={store.id}>
-//                 <Text style={styles.store}>{store.name}</Text>
-//                 <Text style={styles.stores}>{store.address}</Text>
-//                 <Text style={styles.stores}>{store.city}, {store.state}</Text>
-//               </View>
-//             )
-//           })}
-//         </View>
-//       </ScrollView>
-//     );
-//   }
-// }
-
-
 
 AppRegistry.registerComponent('ReactNativeApp1', () => ReactNativeApp1);
