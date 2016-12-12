@@ -3,14 +3,7 @@ import React, { Component } from 'react';
 import { ScrollView, Alert, StyleSheet, AppRegistry,Text, TextInput, ListView, View, Image } from 'react-native';
 import axios from 'axios';
 import styles from './styles';
-
-function api() {
-  if (process.env.NODE_ENV === 'production') {
-    return 'https://bestbuy.now.sh';
-  } else {
-    return'http://localhost:3030';
-  }
-};
+import api from './api';
 
 export default class ReactNativeApp1 extends Component {
   constructor(props) {
